@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -88,6 +89,21 @@ public class StudentController {
         mv.addObject("name", "jack");
         mv.setViewName("freemark");
         return mv;
+    }
+
+    /**
+     * @Author GaoYueBin
+     * @Description 测试全局异常捕获
+     * @Date 2019/7/3 15:48
+     * @Param []
+     * @return java.lang.String
+     **/
+    @RequestMapping("/testExc")
+    @ResponseBody
+    public String testExc() {
+        List<String> strings = new ArrayList<>();
+        System.out.println(strings.get(3));
+        return strings.get(3);
     }
 
 
