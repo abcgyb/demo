@@ -24,12 +24,13 @@ public class StudentServiceImpl implements StudentService {
     @Autowired
     private StudentInterface studentInterface;
 
+
     /**
+     * @return
      * @Author GaoYueBin
      * @Description 查询全部学生
      * @Date 2018/11/13 16:44
      * @Param
-     * @return
      **/
     @Override
     public List<Student> query(String name) {
@@ -38,11 +39,11 @@ public class StudentServiceImpl implements StudentService {
     }
 
     /**
+     * @return
      * @Author GaoYueBin
      * @Description 根据学生姓名更新学生信息
      * @Date 2018/11/14 9:33
      * @Param
-     * @return
      **/
     @Override
     public void update(String name) {
@@ -50,16 +51,16 @@ public class StudentServiceImpl implements StudentService {
     }
 
     /**
+     * @return void
      * @Author GaoYueBin
      * @Description main方法测试
      * @Date 2018/11/16 11:13
      * @Param [args]
-     * @return void
      **/
     public static void main(String[] args) {
         List<Integer> num = new ArrayList<>();
-        int i=0;
-        while (i<101){
+        int i = 0;
+        while (i < 101) {
             num.add(i);
             i++;
         }

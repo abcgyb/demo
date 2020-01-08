@@ -36,9 +36,9 @@ public class ValidateController {
                 String errorMessage = messageSource.getMessage(item, currentLocale);
                 msg.append(errorMessage);
             });
-            return  msg.toString();
+            return msg.toString();
         }
-        return "验证通过，" + "名称："  + entity.getName() + "年龄：" + entity.getAge() + "邮箱地址" + entity.getMail();
+        return "验证通过，" + "名称：" + entity.getName() + "年龄：" + entity.getAge() + "邮箱地址" + entity.getMail();
     }
 
 }

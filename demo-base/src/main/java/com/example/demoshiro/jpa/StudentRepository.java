@@ -10,5 +10,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @Date: 2018-11-29 16:14
  * @Version 1.0
  **/
-public interface StudentRepository  extends JpaRepository<StudentEntity,Integer> {
+public interface StudentRepository extends JpaRepository<StudentEntity, Integer> {
 }

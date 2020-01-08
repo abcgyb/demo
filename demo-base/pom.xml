@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.example</groupId>
-        <artifactId>demo</artifactId>
+        <artifactId>mixture_project</artifactId>
         <version>0.0.1</version>
     </parent>
     <groupId>com.example</groupId>
@@ -27,6 +27,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>demo-shiro</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--引入springcloud相关依赖-->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>demo-dubbo</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

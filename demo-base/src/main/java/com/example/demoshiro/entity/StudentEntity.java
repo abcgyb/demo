@@ -20,7 +20,7 @@ public class StudentEntity {
     @GeneratedValue
     private Integer id;
     /**
-     *  名称
+     * 名称
      */
     @Column
     private String name;
@@ -29,6 +29,6 @@ public class StudentEntity {
      * 年龄
      */
     @Column
-    private String  age;
+    private String age;
 
 }

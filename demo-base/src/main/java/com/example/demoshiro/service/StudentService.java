@@ -14,20 +14,21 @@ import java.util.List;
 public interface StudentService {
 
     /**
+     * @return
      * @Author GaoYueBin
      * @Description 查询全部学生
      * @Date 2018/11/13 16:44
-     * @Param 
-     * @return 
+     * @Param
      **/
     List<Student> query(String name);
-    
+
     /**
+     * @return
      * @Author GaoYueBin
      * @Description 根据学生姓名更新学生信息
      * @Date 2018/11/14 9:33
-     * @Param 
-     * @return 
+     * @Param
      **/
     void update(String name);
+
 }

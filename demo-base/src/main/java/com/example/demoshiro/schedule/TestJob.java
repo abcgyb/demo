@@ -17,7 +17,7 @@ public class TestJob {
     //private static final Logger log = LoggerFactory.getLogger(TestJob.class);
 
     //@Scheduled(cron = "*/5 * * * * ?")
-    public void test(){
+    public void test() {
         log.info("测试日志");
         System.out.println("测试定时器！");
     }

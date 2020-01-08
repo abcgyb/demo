@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.example.demoshiro.mapper.StudentInterface" >
-    <resultMap id="BaseResultMap" type="com.example.demoshiro.dto.Student" >
+<mapper namespace="com.example.demoshiro.mapper.StudentInterface">
+    <resultMap id="BaseResultMap" type="com.example.demoshiro.dto.Student">
         <!--<id column="id" property="id" jdbcType="INTEGER" />-->
-        <result column="name" property="name" jdbcType="VARCHAR" />
-        <result column="age" property="age" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="age" property="age" jdbcType="INTEGER"/>
     </resultMap>
-    <sql id="Base_Column_List" >
+    <sql id="Base_Column_List">
         id, user_name, password, age
     </sql>
 
     <!--根据名称查询学生信息-->
     <select id="queryAll" resultType="com.example.demoshiro.dto.Student" parameterType="java.lang.String">
         SELECT
-            NAME,
-            age
+        NAME,
+        age
         FROM
-            student a
+        student a
         where 1=1
         <if test="studentName == null or studentName == ''">
             and a.name like "%李%" ;
@@ -28,6 +28,6 @@
         UPDATE student a
         SET a.age = '100'
         WHERE
-            a. NAME = #{name};
+        a. NAME = #{name};
     </update>
 </mapper>
