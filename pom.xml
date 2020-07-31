@@ -25,6 +25,9 @@
         <module>demo-cloud-client</module>
         <module>demo-cloud-server</module>
         <module>deme-cloud-server-two</module>
+        <module>demo-cloud-zuul</module>
+        <module>demo-cloud-client1</module>
+        <module>demo-redis</module>
     </modules>
 
     <dependencies>

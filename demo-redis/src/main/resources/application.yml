@@ -1,0 +1,26 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: app-eureka-server
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123
+    maxIdle: 100
+    maxWaitMillis: 10000
+    maxTotal: 600
+    testOnBorrow: true
+    testOnReturn: true
+    timeout: 5000
+
+eureka:
+  ###客户端调用地址
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8100/eureka/
+    ###是否将自己注册到Eureka服务中,因为该应用本身就是注册中心，不需要再注册自己（集群的时候为true）
+    register-with-eureka: true
+    ###是否从Eureka中获取注册信息,因为自己为注册中心,不会在该应用中的检索服务信息
+    fetch-registry: true

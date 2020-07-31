@@ -9,16 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>demo-cloud-client</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <description>Demo project for Spring Boot</description>
+    <artifactId>demo-cloud-client1</artifactId>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
+        <spring-cloud.version>Finchley.RC2</spring-cloud.version>
         <fastjson.version>1.2.60</fastjson.version>
     </properties>
 
@@ -50,7 +47,7 @@
             <version>2.1.1.RELEASE</version>
         </dependency>
         <!--熔断器部分-->
- <!--       <dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
             <version>1.4.7.RELEASE</version>
@@ -63,7 +60,7 @@
             <groupId>com.netflix.hystrix</groupId>
             <artifactId>hystrix-javanica</artifactId>
             <version>1.5.12</version>
-        </dependency>-->
+        </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
